@@ -1,0 +1,58 @@
+name: loft
+version: 0.3.1
+commands:
+  - name: "login"
+    baseArgs: ["login"]
+  - name: "token"
+    baseArgs: ["token"]
+  - name: "sleep"
+    baseArgs: ["sleep"]
+  - name: "wakeup"
+    baseArgs: ["wakeup"]
+  - name: "create"
+    baseArgs: ["create"]
+  - name: "connect"
+    baseArgs: ["connect"]
+  - name: "delete"
+    baseArgs: ["delete"]
+  - name: "generate"
+    baseArgs: ["generate"]
+  - name: "get"
+    baseArgs: ["get"]
+  - name: "spaces"
+    baseArgs: ["list", "spaces"]
+    subCommand: "list"
+  - name: "clusters"
+    baseArgs: ["list", "clusters"]
+    subCommand: "list"
+  - name: "vclusters"
+    baseArgs: ["list", "vclusters"]
+    subCommand: "list"
+  - name: "teams"
+    baseArgs: ["list", "teams"]
+    subCommand: "list"
+  - name: "vcluster"
+    baseArgs: ["use", "vcluster"]
+    subCommand: "use"
+  - name: "cluster"
+    baseArgs: ["use", "cluster"]
+    subCommand: "use"
+  - name: "space"
+    baseArgs: ["use", "space"]
+    subCommand: "use"
+binaries:
+  - os: darwin
+    arch: amd64
+    path: https://github.com/loft-sh/loft/releases/download/v0.3.1/loft-devspace-plugin-darwin-amd64
+  - os: linux
+    arch: amd64
+    path: https://github.com/loft-sh/loft/releases/download/v0.3.1/loft-devspace-plugin-linux-amd64
+  - os: linux
+    arch: "386"
+    path: https://github.com/loft-sh/loft/releases/download/v0.3.1/loft-devspace-plugin-linux-386
+  - os: windows
+    arch: amd64
+    path: https://github.com/loft-sh/loft/releases/download/v0.3.1/loft-devspace-plugin-windows-amd64.exe
+  - os: windows
+    arch: "386"
+    path: https://github.com/loft-sh/loft/releases/download/v0.3.1/loft-devspace-plugin-windows-386.exe

@@ -1,5 +1,5 @@
 name: loft
-version: 0.3.2-beta.0
+version: v0.3.2-beta.0
 commands:
   - name: "login"
     baseArgs: ["login"]

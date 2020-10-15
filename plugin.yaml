@@ -1,5 +1,5 @@
 name: loft
-version: v1.2.0
+version: v1.2.1
 commands:
   - name: "login"
     baseArgs: ["login"]
@@ -48,16 +48,16 @@ vars:
 binaries:
   - os: darwin
     arch: amd64
-    path: https://github.com/loft-sh/loft-devspace-plugin/releases/download/v1.2.0/loft-devspace-plugin-darwin-amd64
+    path: https://github.com/loft-sh/loft-devspace-plugin/releases/download/v1.2.1/loft-devspace-plugin-darwin-amd64
   - os: linux
     arch: amd64
-    path: https://github.com/loft-sh/loft-devspace-plugin/releases/download/v1.2.0/loft-devspace-plugin-linux-amd64
+    path: https://github.com/loft-sh/loft-devspace-plugin/releases/download/v1.2.1/loft-devspace-plugin-linux-amd64
   - os: linux
     arch: "386"
-    path: https://github.com/loft-sh/loft-devspace-plugin/releases/download/v1.2.0/loft-devspace-plugin-linux-386
+    path: https://github.com/loft-sh/loft-devspace-plugin/releases/download/v1.2.1/loft-devspace-plugin-linux-386
   - os: windows
     arch: amd64
-    path: https://github.com/loft-sh/loft-devspace-plugin/releases/download/v1.2.0/loft-devspace-plugin-windows-amd64.exe
+    path: https://github.com/loft-sh/loft-devspace-plugin/releases/download/v1.2.1/loft-devspace-plugin-windows-amd64.exe
   - os: windows
     arch: "386"
-    path: https://github.com/loft-sh/loft-devspace-plugin/releases/download/v1.2.0/loft-devspace-plugin-windows-386.exe
+    path: https://github.com/loft-sh/loft-devspace-plugin/releases/download/v1.2.1/loft-devspace-plugin-windows-386.exe

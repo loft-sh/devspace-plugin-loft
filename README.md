@@ -1,4 +1,4 @@
-This plugin adds the [Loft CLI](https://github.com/loft-sh/loft) commands to [DevSpace](https://github.com/loft-sh/devspace). 
+This plugin adds the [Loft CLI](https://github.com/loft-sh/loft) commands to [DevSpace](https://devspace.sh/). 
 
 ## Installation
 

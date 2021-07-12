@@ -4,7 +4,7 @@ This plugin adds the [Loft CLI](https://github.com/loft-sh/loft) commands to [De
 
 You can add this plugin to devspace via:
 ```
-devspace add plugin https://github.com/loft-sh/devspace-plugin-loft --version=v1.13.0
+devspace add plugin https://github.com/loft-sh/devspace-plugin-loft --version=v1.13.1
 ```
 
 Update this plugin via:

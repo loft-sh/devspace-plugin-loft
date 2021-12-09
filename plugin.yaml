@@ -3,60 +3,67 @@ version: v2.0.2
 commands:
   - name: "login"
     usage: "Log into Loft"
-    description: |-
-      #######################################################
-      ################## devspace login #####################
-      #######################################################
-      Log into Loft
-      
-      devspace login loft.my-domain.org
-      devspace login loft.my-domain.org --insecure
-      devspace login loft.my-domain.org --access-key MY_KEY
-      #######################################################
     baseArgs: ["login"]
   - name: "token"
     baseArgs: ["token"]
+    usage: "Show the current access token for Loft"
   - name: "sleep"
     baseArgs: ["sleep"]
+    usage: "Put a space to sleep"
   - name: "wakeup"
     baseArgs: ["wakeup"]
+    usage: "Wake a sleeping space up"
   - name: "create"
     baseArgs: ["create"]
+    usage: "Create new spaces and virtual clusters"
   - name: "connect"
     baseArgs: ["connect"]
+    usage: "Connect to a virtual cluster"
   - name: "delete"
     baseArgs: ["delete"]
+    usage: "Delete a space or virtual cluster"
   - name: "generate"
     baseArgs: ["generate"]
+    usage: "Generate an admin config to connect a new cluster to Loft"
   - name: "get"
     baseArgs: ["get"]
+    usage: "Show a shared secret or Loft user information"
   - name: "spaces"
     baseArgs: ["list", "spaces"]
     subCommand: "list"
+    usage: "List all Loft spaces"
   - name: "secrets"
     baseArgs: ["list", "secrets"]
     subCommand: "list"
+    usage: "List all shared Loft secrets"
   - name: "clusters"
     baseArgs: ["list", "clusters"]
     subCommand: "list"
+    usage: "List all accessible Loft clusters"
   - name: "vclusters"
     baseArgs: ["list", "vclusters"]
     subCommand: "list"
+    usage: "List all accessible virtual clusters"
   - name: "teams"
     baseArgs: ["list", "teams"]
     subCommand: "list"
+    usage: "List Loft teams"
   - name: "vcluster"
     baseArgs: ["use", "vcluster"]
     subCommand: "use"
+    usage: "Use a virtual cluster"
   - name: "cluster"
     baseArgs: ["use", "cluster"]
     subCommand: "use"
+    usage: "Use a connected Loft cluster"
   - name: "space"
     baseArgs: ["use", "space"]
     subCommand: "use"
+    usage: "Use a space"
   - name: "secret"
     baseArgs: ["set", "secret"]
     subCommand: "set"
+    usage: "Write to a shared Loft secret"
 vars:
   - name: LOFT_CLUSTER
     baseArgs: ["vars", "cluster"]

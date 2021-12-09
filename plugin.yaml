@@ -2,6 +2,17 @@ name: loft
 version: v2.0.2
 commands:
   - name: "login"
+    usage: "Log into Loft"
+    description: |-
+      #######################################################
+      ################## devspace login #####################
+      #######################################################
+      Log into Loft
+      
+      devspace login loft.my-domain.org
+      devspace login loft.my-domain.org --insecure
+      devspace login loft.my-domain.org --access-key MY_KEY
+      #######################################################
     baseArgs: ["login"]
   - name: "token"
     baseArgs: ["token"]

@@ -69,6 +69,8 @@ vars:
     baseArgs: ["vars", "cluster"]
   - name: LOFT_USERNAME
     baseArgs: ["vars", "username"]
+  - name: DEVSPACE_USERNAME
+    baseArgs: ["vars", "username"]
 binaries:
   - os: darwin
     arch: amd64

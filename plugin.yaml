@@ -89,4 +89,4 @@ binaries:
     path: https://github.com/loft-sh/devspace-plugin-loft/releases/download/v3.2.4/devspace-plugin-loft-windows-amd64.exe
   - os: windows
     arch: "386"
-    path: https://github.com/loft-sh/devspace-plugin-loft/releases/download/v3.2.3/devspace-plugin-loft-windows-386.exe
+    path: https://github.com/loft-sh/devspace-plugin-loft/releases/download/v3.2.4/devspace-plugin-loft-windows-386.exe

@@ -5,88 +5,82 @@ commands:
     usage: "Log into Loft"
     baseArgs: ["login"]
   - name: "token"
-    baseArgs: ["token"]
+    baseArgs: ["platform", "access-key"]
     usage: "Show the current access token for Loft"
   - name: "sleep"
-    baseArgs: ["sleep"]
+    baseArgs: ["platform", "sleep"]
     usage: "Put a space to sleep"
   - name: "wakeup"
-    baseArgs: ["wakeup"]
+    baseArgs: ["platform", "wakeup"]
     usage: "Wake a sleeping space up"
   - name: "create"
-    baseArgs: ["create"]
-    usage: "Create new spaces and virtual clusters"
+    baseArgs: ["platform", "create"]
+    usage: "Create a space or virtual cluster"
   - name: "connect"
-    baseArgs: ["connect"]
+    baseArgs: ["platform", "connect"]
     usage: "Connect to a virtual cluster"
   - name: "delete"
-    baseArgs: ["delete"]
+    baseArgs: ["platform", "delete"]
     usage: "Delete a space or virtual cluster"
-  - name: "generate"
-    baseArgs: ["generate"]
-    usage: "Generate an admin config to connect a new cluster to Loft"
   - name: "get"
-    baseArgs: ["get"]
+    baseArgs: ["platform", "get"]
     usage: "Show a shared secret or Loft user information"
   - name: "spaces"
-    baseArgs: ["list", "spaces"]
+    baseArgs: ["platform", "list", "spaces"]
     subCommand: "list"
     usage: "List all Loft spaces"
   - name: "secrets"
-    baseArgs: ["list", "secrets"]
+    baseArgs: ["platform", "list", "secrets"]
     subCommand: "list"
     usage: "List all shared Loft secrets"
   - name: "clusters"
-    baseArgs: ["list", "clusters"]
+    baseArgs: ["platform", "list", "clusters"]
     subCommand: "list"
     usage: "List all accessible Loft clusters"
   - name: "vclusters"
-    baseArgs: ["list", "vclusters"]
+    baseArgs: ["platform", "list", "vclusters"]
     subCommand: "list"
     usage: "List all accessible virtual clusters"
   - name: "teams"
-    baseArgs: ["list", "teams"]
+    baseArgs: ["platform", "list", "teams"]
     subCommand: "list"
     usage: "List Loft teams"
   - name: "vcluster"
-    baseArgs: ["use", "vcluster"]
+    baseArgs: ["platform", "connect", "vcluster"]
     subCommand: "use"
     usage: "Use a virtual cluster"
   - name: "cluster"
-    baseArgs: ["use", "cluster"]
+    baseArgs: ["platform", "connect", "cluster"]
     subCommand: "use"
     usage: "Use a connected Loft cluster"
   - name: "space"
-    baseArgs: ["use", "space"]
+    baseArgs: ["platform", "connect", "space"]
     subCommand: "use"
     usage: "Use a space"
   - name: "secret"
-    baseArgs: ["set", "secret"]
+    baseArgs: ["platform", "set", "secret"]
     subCommand: "set"
     usage: "Write to a shared Loft secret"
 vars:
   - name: LOFT_CLUSTER
-    baseArgs: ["vars", "cluster"]
+    baseArgs: ["platform", "get", "cluster"]
   - name: LOFT_USERNAME
-    baseArgs: ["vars", "username"]
+    baseArgs: ["platform", "get", "current-user", "--output=name"]
   - name: DEVSPACE_USERNAME
-    baseArgs: ["vars", "username"]
+    baseArgs: ["platform", "get", "current-user", "--output=name"]
 binaries:
   - os: darwin
     arch: amd64
-    path: https://github.com/loft-sh/devspace-plugin-loft/releases/download/v3.4.6/devspace-plugin-loft-darwin-amd64
+    path: https://github.com/loft-sh/vcluster/releases/download/v0.20.0-beta.6/vcluster-darwin-amd64
   - os: darwin
     arch: arm64
-    path: https://github.com/loft-sh/devspace-plugin-loft/releases/download/v3.4.6/devspace-plugin-loft-darwin-arm64
+    path: https://github.com/loft-sh/vcluster/releases/download/v0.20.0-beta.6/vcluster-darwin-arm64
   - os: linux
     arch: amd64
-    path: https://github.com/loft-sh/devspace-plugin-loft/releases/download/v3.4.6/devspace-plugin-loft-linux-amd64
+    path: https://github.com/loft-sh/vcluster/releases/download/v0.20.0-beta.6/vcluster-linux-amd64
   - os: linux
-    arch: "386"
-    path: https://github.com/loft-sh/devspace-plugin-loft/releases/download/v3.4.6/devspace-plugin-loft-linux-386
+    arch: arm64
+    path: https://github.com/loft-sh/vcluster/releases/download/v0.20.0-beta.6/vcluster-linux-arm64
   - os: windows
     arch: amd64
-    path: https://github.com/loft-sh/devspace-plugin-loft/releases/download/v3.4.6/devspace-plugin-loft-windows-amd64.exe
-  - os: windows
-    arch: "386"
-    path: https://github.com/loft-sh/devspace-plugin-loft/releases/download/v3.4.6/devspace-plugin-loft-windows-386.exe
+    path: https://github.com/loft-sh/vcluster/releases/download/v0.20.0-beta.6/vcluster-windows-amd64.exe

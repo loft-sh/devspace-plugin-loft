@@ -1,5 +1,5 @@
 name: loft
-version: v4.0.0-alpha.11
+version: v3.4.7-rc.3
 commands:
   - name: "login"
     usage: "Log into Loft"

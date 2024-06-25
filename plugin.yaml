@@ -1,5 +1,5 @@
 name: loft
-version: v4.0.0-alpha.12
+version: v4.0.0-alpha.14
 commands:
   - name: "login"
     usage: "Log into Loft"
@@ -71,16 +71,16 @@ vars:
 binaries:
   - os: darwin
     arch: amd64
-    path: https://github.com/loft-sh/vcluster/releases/download/v0.20.0-beta.8/vcluster-darwin-amd64
+    path: https://github.com/loft-sh/vcluster/releases/download/v0.20.0-beta.10/vcluster-darwin-amd64
   - os: darwin
     arch: arm64
-    path: https://github.com/loft-sh/vcluster/releases/download/v0.20.0-beta.8/vcluster-darwin-arm64
+    path: https://github.com/loft-sh/vcluster/releases/download/v0.20.0-beta.10/vcluster-darwin-arm64
   - os: linux
     arch: amd64
-    path: https://github.com/loft-sh/vcluster/releases/download/v0.20.0-beta.8/vcluster-linux-amd64
+    path: https://github.com/loft-sh/vcluster/releases/download/v0.20.0-beta.10/vcluster-linux-amd64
   - os: linux
     arch: arm64
-    path: https://github.com/loft-sh/vcluster/releases/download/v0.20.0-beta.8/vcluster-linux-arm64
+    path: https://github.com/loft-sh/vcluster/releases/download/v0.20.0-beta.10/vcluster-linux-arm64
   - os: windows
     arch: amd64
-    path: https://github.com/loft-sh/vcluster/releases/download/v0.20.0-beta.8/vcluster-windows-amd64.exe
+    path: https://github.com/loft-sh/vcluster/releases/download/v0.20.0-beta.10/vcluster-windows-amd64.exe
